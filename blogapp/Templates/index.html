@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my blog</title>
+    <title>my blog เรื่องแมวแมว</title>
     {# Load the tag library #}
     {% load bootstrap4 %}
 
@@ -15,8 +15,8 @@
     {% bootstrap_messages %}
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Blog ผลงานนักศึกษา</a>
+    <nav style="background: rgb(1, 68, 112);" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">mY Blog ==> Cat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,28 +39,41 @@
       <main role="main">
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-          <div class="container">
-            <h1 class="display-3">ผลงานและงานวิจัย</h1>
-            
+        <div style="background-color: rgb(26, 133, 204);" class="jumbotron">
+          <!--<div class="alert alert-info" role="alert">-->
+          <div  class="container">
+            <h1 style="color: white;" class="display-5">สายพันธุ์แมว  </h1>
             
           </div>
         </div>
       
-        <div class="container">
+         <div class="container">
           <!-- Example row of columns -->
           
             {% for post in test %}
           <div class="row-fluid pb-3">
             
               <div class="card">
-                <div class="card-header">
-                  งานวิจัย
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                </html>
+
+               
+                <div style="font-weight: 1000; " class="alert alert-primary" role="alert">
+                  {{post.title}}
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">{{post.title}}</h5>
-                  <p class="card-text">{{post.body}}</p>
+                  <h5 style="color: darkblue;" class="card-title"></h5>
+                  <p class="card-text">{{post.body}}</p> 
+            
                   <a href="#" class="btn btn-primary">ดูรายละเอียด</a>
+                  
+
                 </div>
               </div>
 
@@ -78,7 +91,7 @@
       </footer>
 
    
-    
+   
       
         
 </body>
